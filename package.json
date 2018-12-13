@@ -1,7 +1,7 @@
 {
   "name": "vuejs-atom-snippets",
   "version": "1.0.0",
-  "description": "Vue.js snippets for Atom",
+  "description": "Useful Vue.js snippets for Atom",
   "keywords": [
     "atom-extension",
     "atom-snippets",

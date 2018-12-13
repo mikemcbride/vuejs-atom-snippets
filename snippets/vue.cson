@@ -1,5 +1,5 @@
 '.text.html.vue':
-  'Vue Component':
+  'Basic Vue Component':
     'prefix': 'vbase'
     'body': '''<template lang="html">
         <div>
@@ -18,12 +18,12 @@
       </style>
       '''
     'description': 'Scaffold out a basic Vue single file component'
-  'Vue Component':
+  'Scaffold Vue Component':
     'prefix': 'vscaffold'
     'body': '''<template lang="html">
-        <div>
-          $4
-        </div>
+        <${5:div}>
+          $0
+        </${5:div}>
       </template>
       
       <script>
@@ -43,16 +43,7 @@
         computed: {
           
         },
-        watch: {
-          
-        },
-        async created() {
-          
-        },
-        mounted() {
-          
-        },
-        destroyed() {
+        ${4:async }created() {
           
         },
         methods: {
@@ -71,6 +62,22 @@
     'prefix': 'vimport'
     'body': 'import ${1:New} from \'@/components/${1:New}\''
     'description': 'Import a local Vue component into the current component'
+  'Vue Components block':
+    'prefix': 'vcomponents'
+    'body': '''
+    components: {
+      ${1:New},
+    },
+    '''
+  'Vue Filters':
+    'prefix': 'vfilter'
+    'body': '''
+    filters: {
+      ${1:name}(${2:value}) {
+        return ${2:value}$0
+      }
+    },
+    '''
   'Vue Props':
     'prefix': 'vprops'
     'body': '''
@@ -80,13 +87,6 @@
         default: \'\'}${4:,
         required: true}
       },
-    },
-    '''
-  'Vue Components block':
-    'prefix': 'vcomponents'
-    'body': '''
-    components: {
-      ${1:New},
     },
     '''
   'Vue Data':
@@ -107,30 +107,12 @@
       }
     },
     '''
-  'Vue Methods':
-    'prefix': 'vmethod'
-    'body': '''
-    methods: {
-      ${1:name}() {
-        $0
-      }
-    },
-    '''
   'Vue Watchers':
     'prefix': 'vwatcher'
     'body': '''
     watch: {
       ${1:name}(${2:newValue}, ${3:oldValue}) {
         $0
-      }
-    },
-    '''
-  'Vue Filters':
-    'prefix': 'vfilter'
-    'body': '''
-    filters: {
-      ${1:name}(${2:value}) {
-        return ${2:value}$0
       }
     },
     '''
@@ -150,5 +132,14 @@
     'prefix': 'vdestroyed'
     'body': '''destroyed() {
       $0
+    },
+    '''
+  'Vue Methods':
+    'prefix': 'vmethod'
+    'body': '''
+    methods: {
+      ${1:name}() {
+        $0
+      }
     },
     '''
