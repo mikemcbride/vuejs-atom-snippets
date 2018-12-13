@@ -1,0 +1,154 @@
+'.text.html.vue':
+  'Vue Component':
+    'prefix': 'vbase'
+    'body': '''<template lang="html">
+        <div>
+          $4
+        </div>
+      </template>
+      
+      <script>
+      export default {
+        name: '${1:MyComponent}'
+      }
+      </script>
+      
+      <style lang="${2:scss}"${3: scoped}>
+      
+      </style>
+      '''
+    'description': 'Scaffold out a basic Vue single file component'
+  'Vue Component':
+    'prefix': 'vscaffold'
+    'body': '''<template lang="html">
+        <div>
+          $4
+        </div>
+      </template>
+      
+      <script>
+      export default {
+        name: '${1:MyComponent}',
+        components: {
+          
+        },
+        props: {
+          
+        },
+        data() {
+          return {
+            
+          }
+        },
+        computed: {
+          
+        },
+        watch: {
+          
+        },
+        async created() {
+          
+        },
+        mounted() {
+          
+        },
+        destroyed() {
+          
+        },
+        methods: {
+          
+        }
+      }
+      </script>
+      
+      <style lang="${2:scss}"${3: scoped}>
+      
+      </style>
+      '''
+    'description': 'Scaffold out a Vue single file component with the most commonly used component options'
+'.text.html.vue .source.js.embedded.html':
+  'Import Vue Component':
+    'prefix': 'vimport'
+    'body': 'import ${1:New} from \'@/components/${1:New}\''
+    'description': 'Import a local Vue component into the current component'
+  'Vue Props':
+    'prefix': 'vprops'
+    'body': '''
+    props: {
+      ${1:prop}: {
+        type: ${2:String}${3:,
+        default: \'\'}${4:,
+        required: true}
+      },
+    },
+    '''
+  'Vue Components block':
+    'prefix': 'vcomponents'
+    'body': '''
+    components: {
+      ${1:New},
+    },
+    '''
+  'Vue Data':
+    'prefix': 'vdata'
+    'body': '''
+    data() {
+      return {
+        $1
+      }
+    },
+    '''
+  'Vue Computed':
+    'prefix': 'vcomputed'
+    'body': '''
+    computed: {
+      ${1:name}() {
+        $0
+      }
+    },
+    '''
+  'Vue Methods':
+    'prefix': 'vmethod'
+    'body': '''
+    methods: {
+      ${1:name}() {
+        $0
+      }
+    },
+    '''
+  'Vue Watchers':
+    'prefix': 'vwatcher'
+    'body': '''
+    watch: {
+      ${1:name}(${2:newValue}, ${3:oldValue}) {
+        $0
+      }
+    },
+    '''
+  'Vue Filters':
+    'prefix': 'vfilter'
+    'body': '''
+    filters: {
+      ${1:name}(${2:value}) {
+        return ${2:value}$0
+      }
+    },
+    '''
+  'Vue Created hook':
+    'prefix': 'vcreated'
+    'body': '''${1:async }created() {
+      $0
+    },
+    '''
+  'Vue Mounted hook':
+    'prefix': 'vmounted'
+    'body': '''mounted() {
+      $0
+    },
+    '''
+  'Vue Destroyed hook':
+    'prefix': 'vdestroyed'
+    'body': '''destroyed() {
+      $0
+    },
+    '''

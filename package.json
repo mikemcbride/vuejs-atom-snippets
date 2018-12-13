@@ -1,0 +1,26 @@
+{
+  "name": "vuejs-atom-snippets",
+  "version": "1.0.0",
+  "description": "Vue.js snippets for Atom",
+  "keywords": [
+    "atom-extension",
+    "atom-snippets",
+    "atom-vue",
+    "atom",
+    "snippets",
+    "vue-snippets",
+    "vue",
+    "vue2",
+    "vuejs",
+    "vuejs2",
+    "vuex-snippets",
+    "vuex"
+  ],
+  "repository": "https://github.com/mikemcbride/vuejs-atom-snippets",
+  "homepage": "https://github.com/mikemcbride/vuejs-atom-snippets",
+  "author": "mikemcbride",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  }
+}
