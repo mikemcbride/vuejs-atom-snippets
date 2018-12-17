@@ -1,4 +1,4 @@
-'source.js':
+'.source.js':
   'Vuex Store':
     'prefix': 'vstore'
     'body': """'use strict'
